@@ -1,6 +1,4 @@
-guys, check this -> "Essential cross-platform UI components for React Native http://nativebase.io/"
-
-/+ examples on https://docs.getexponent.com/versions/v11.0.0/introduction/additional-resources.html
+now using NativeBase http://nativebase.io/
 
 Free images:
  - https://unsplash.com/
