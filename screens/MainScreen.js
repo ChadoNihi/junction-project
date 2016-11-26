@@ -5,7 +5,7 @@ import CardSwiper from '../components/CardSwiper.js';
 
 const meals = [];
 ​
-export const MainScreen = ()=> {
+export const MainScreen = ({onForward, onBack})=> {
   return (
     <Container>
       <Header searchBar rounded>
