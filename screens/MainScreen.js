@@ -40,7 +40,7 @@ export const MainScreen = ({onForward, onBack})=> {
         {Object.keys(allMeals).forEach(function(key) {
           const meals = allMeals[key];
 
-          return <CardSwiper meals={meals} />;
+          return <CardSwiper meals={meals} mealKey={key} />;
         })}
       </Content>
 
