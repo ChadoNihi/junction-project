@@ -28,7 +28,7 @@ class HealthyDietApp extends Component {
               const nextIndex = route.index + 1;
               navigator.push({
                 title: 'Scene ' + nextIndex,
-                index: nextIndex,
+                index: nextIndex
               });
             }}
 
@@ -46,7 +46,7 @@ class HealthyDietApp extends Component {
 }
 
 const styles = StyleSheet.create({
-  
+
 });
 
 AppRegistry.registerComponent('HealthyDietApp', () => HealthyDietApp);

@@ -6,7 +6,7 @@ import HealthChart from '../components/HealthChart.js';
 import TheFooter from '../components/TheFooter.js';
 
 const allMeals = {
-  breakfasts: [], // arr of {title, image, ingredients, optional ingredients, tags}
+  breakfasts: [], // arr of {title, image, ingredients, optIngredients, tags}
   lunches: [],
   dinners: [],
   snacks: [] //cashews!1
