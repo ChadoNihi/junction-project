@@ -19,7 +19,7 @@ export const DeckSwiperExample = ({meals})=> {
           <DeckSwiper
               dataSource={meals}
               renderItem={item =>
-                  <SuggestionCard image={item.image} title={item.title} />
+                  <SuggestionCard mealKey={mealKey} image={item.image} ingredients={item.ingredients} optIngredients={item.optIngredients} tags={item.tags} title={item.title} />
               }
           />
       </View>

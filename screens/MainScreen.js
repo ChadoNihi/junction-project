@@ -6,7 +6,7 @@ import HealthChart from '../components/HealthChart.js';
 import TheFooter from '../components/TheFooter.js';
 
 const allMeals = {
-  breakfasts: [], // arr of {title, image, ingredients, optional ingredients, tags}
+  breakfasts: [], // arr of {title, image, ingredients, optIngredients, tags}
   lunches: [],
   dinners: [],
   snacks: [] //cashews!1
@@ -40,7 +40,7 @@ export const MainScreen = ({onForward, onBack})=> {
         {Object.keys(allMeals).forEach(function(key) {
           const meals = allMeals[key];
 
-          return <CardSwiper meals={meals} />;
+          return <CardSwiper meals={meals} mealKey={key} />;
         })}
       </Content>
 
