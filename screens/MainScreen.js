@@ -5,7 +5,7 @@ import CardSwiper from '../components/CardSwiper.js';
 import HealthChart from '../components/HealthChart.js';
 
 const allMeals = {
-  breakfasts: [],
+  breakfasts: [], // arr of {title, image, ingredients, optional ingredients, tags}
   lunches: [],
   dinners: [],
   snacks: []
