@@ -4,16 +4,7 @@ import { Container, Icon, View, DeckSwiper, Card, CardItem, Thumbnail, Text } fr
 
 import SuggestionCard from './SuggestionCard.js';
 
-/*const cards = [
-    {
-        text: 'Card One',
-        name: 'One',
-        image: require('./img/swiper-1.png'),
-    },
-    .  .  .
-];*/
-
-export const DeckSwiperExample = ({meals})=> {
+export const CardSwiper = ({meals})=> {
     return (
       <View>
           <DeckSwiper
