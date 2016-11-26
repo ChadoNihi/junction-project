@@ -3,7 +3,7 @@ import { Container, Header, InputGroup, Input, Icon, Button } from 'native-base'
 
 import CardSwiper from '../components/CardSwiper.js';
 
-const meals = [];
+const meals = []; //image, title
 ​
 export const MainScreen = ({onForward, onBack})=> {
   return (
@@ -20,6 +20,8 @@ export const MainScreen = ({onForward, onBack})=> {
       </Header>
 
       <Content>
+        <HealthChart />
+        
         <CardSwiper />
         <CardSwiper />
         <CardSwiper />
