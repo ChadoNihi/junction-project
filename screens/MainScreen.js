@@ -3,12 +3,13 @@ import { Container, Header, InputGroup, Input, Icon, Button } from 'native-base'
 
 import CardSwiper from '../components/CardSwiper.js';
 import HealthChart from '../components/HealthChart.js';
+import TheFooter from '../components/TheFooter.js';
 
 const allMeals = {
   breakfasts: [], // arr of {title, image, ingredients, optional ingredients, tags}
   lunches: [],
   dinners: [],
-  snacks: []
+  snacks: [] //cashews!1
 }; //image, title, main ingredients(?),
 ​
 export const MainScreen = ({onForward, onBack})=> {
@@ -39,7 +40,7 @@ export const MainScreen = ({onForward, onBack})=> {
         })}
       </Content>
 
-      <Footer />
+      <TheFooter />
     </Container>
   );
 }
