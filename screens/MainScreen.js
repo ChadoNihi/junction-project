@@ -4,7 +4,12 @@ import { Container, Header, InputGroup, Input, Icon, Button } from 'native-base'
 import CardSwiper from '../components/CardSwiper.js';
 import HealthChart from '../components/HealthChart.js';
 
-const meals = []; //image, title
+const allMeals = {
+  breakfasts: [],
+  lunches: [],
+  dinners: [],
+  snacks: []
+}; //image, title, main ingredients(?),
 ​
 export const MainScreen = ({onForward, onBack})=> {
   return (
@@ -27,9 +32,11 @@ export const MainScreen = ({onForward, onBack})=> {
           <H3>Your Menu for Today</H3>
           <Button bordered info> This week </Button>
         </Container>
-        <CardSwiper />
-        <CardSwiper />
-        <CardSwiper />
+        {Object.keys(allMeals).forEach(function(key) {
+          const meals = allMeals[key];
+
+          return <CardSwiper meals={meals} />;
+        })}
       </Content>
 
       <Footer />

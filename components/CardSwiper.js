@@ -13,13 +13,13 @@ import SuggestionCard from './SuggestionCard.js';
     .  .  .
 ];*/
 
-export const DeckSwiperExample = ()=> {
+export const DeckSwiperExample = ({meals})=> {
     return (
       <View>
           <DeckSwiper
-              dataSource={cards}
+              dataSource={meals}
               renderItem={item =>
-                  <SuggestionCard image={} title={} />
+                  <SuggestionCard image={item.image} title={item.title} />
               }
           />
       </View>
