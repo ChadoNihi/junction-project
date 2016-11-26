@@ -1,5 +1,4 @@
 package com.healthydietapp;
-package com.awesomenativebase;
 
 import android.app.Application;
 import android.util.Log;
