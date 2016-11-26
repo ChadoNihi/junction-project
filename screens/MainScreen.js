@@ -27,6 +27,10 @@ export const MainScreen = ({onForward, onBack})=> {
       </Header>
 
       <Content>
+        <Container>
+          <H3>Your Latest Health Data</H3>
+          <Button bordered info> See more </Button>
+        </Container>
         <HealthChart />
 
         <Container>

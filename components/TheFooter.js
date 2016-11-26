@@ -4,26 +4,20 @@ import { Container, Content, Footer, FooterTab, Button, Icon, Badge } from 'nati
 export const TheFooter = ()=> {
     return (
         <Container>
-            <Content />
-
-            <Footer >
+            <Footer>
                 <FooterTab>
                     <Button>
                         <Badge>2</Badge>
-                        Apps
-                        <Icon name='ios-apps-outline' />
+                        Today
                     </Button>
                     <Button>
-                        Camera
-                        <Icon name='ios-camera-outline' />
+                        This Week
                     </Button>
                     <Button active>
-                        Navigate
-                        <Icon name='ios-compass' />
+                        Your Health
                     </Button>
                     <Button>
-                        Contact
-                        <Icon name='ios-contact-outline' />
+                        Setting
                     </Button>
                 </FooterTab>
             </Footer>
