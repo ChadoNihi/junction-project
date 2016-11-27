@@ -12,7 +12,7 @@ const allMeals = {
   snacks: [] //cashews!1
 }; //image, title, main ingredients(?),
 ​
-export const MainScreen = ({onForward, onBack})=> {
+export const MainScreen = ({acceptMeal, onForward, onBack})=> {
   return (
     <Container>
       <Header searchBar rounded>
@@ -40,7 +40,7 @@ export const MainScreen = ({onForward, onBack})=> {
         {Object.keys(allMeals).forEach(function(key) {
           const meals = allMeals[key];
 
-          return <CardSwiper meals={meals} mealKey={key} />;
+          return <CardSwiper acceptMeal={acceptMeal} meals={meals} mealKey={key} />;
         })}
       </Content>
 

@@ -4,13 +4,13 @@ import { Container, Icon, View, DeckSwiper, Card, CardItem, Thumbnail, Text } fr
 
 import SuggestionCard from './SuggestionCard.js';
 
-export const CardSwiper = ({meals})=> {
+export const CardSwiper = ({acceptMeal, meals})=> {
     return (
       <View>
           <DeckSwiper
               dataSource={meals}
               renderItem={item =>
-                  <SuggestionCard mealKey={mealKey} image={item.image} ingredients={item.ingredients} optIngredients={item.optIngredients} tags={item.tags} title={item.title} />
+                  <SuggestionCard acceptMeal={acceptMeal} mealKey={mealKey} image={item.image} ingredients={item.ingredients} optIngredients={item.optIngredients} tags={item.tags} title={item.title} />
               }
           />
       </View>

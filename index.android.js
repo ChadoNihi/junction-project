@@ -16,6 +16,10 @@ import {
 import MainScreen from './components/MainScreen.js';
 
 class HealthyDietApp extends Component {
+  acceptMeal() {
+    
+  }
+
   render() {
     return (
       <Navigator

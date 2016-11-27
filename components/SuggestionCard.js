@@ -17,7 +17,7 @@ export const SuggestionCard = ({acceptMeal, mealKey, title, image, ingredients, 
         </CardItem>
         <CardItem>
           <Button primary onClick={acceptMeal}>
-            <FontAwesome name="check" size={32} /*color="white"*/ />
+            <ion-icon name="md-checkmark"></ion-icon>
           </Button>
         </CardItem>
     </Card>
