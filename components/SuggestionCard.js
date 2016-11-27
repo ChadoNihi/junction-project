@@ -5,7 +5,7 @@ import { FontAwesome } from '@exponent/vector-icons';
 
 export const SuggestionCard = ({acceptMeal, mealKey, title, image, ingredients, optIngredients, tags})=> {
   return (
-    <Card style={{ elevation: 3 }>
+    <Card style={{ elevation: 3 }}>
         <CardItem>
             <Thumbnail source={item.image} />
             <Text>{title}</Text>
