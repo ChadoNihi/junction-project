@@ -8,8 +8,9 @@ export const SuggestionCard = ({acceptMeal, mealKey, title, image, ingredients, 
     <Card style={{ elevation: 3 }>
         <CardItem>
             <Thumbnail source={item.image} />
-            <Text>{mealKey}: {title}</Text>
+            <Text>{title}</Text>
             <Text note>NativeBase</Text>
+            <Text>{mealKey}</Text>
         </CardItem>
         <CardItem>
             <Image style={{ resizeMode: 'cover', width: null }} source={image} />
